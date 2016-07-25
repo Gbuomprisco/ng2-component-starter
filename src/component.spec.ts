@@ -1,20 +1,14 @@
 import {
-    describe,
-    inject,
-    it,
-    expect,
     tick,
-    beforeEach,
+    ComponentFixture,
+    TestComponentBuilder,
+    inject,
+    addProviders,
     fakeAsync
 } from '@angular/core/testing';
 
-import {
-    ComponentFixture,
-    TestComponentBuilder
-} from '@angular/compiler/testing';
-
 import { Component } from '@angular/core';
-import {By} from '@angular/platform-browser';
+import { By } from '@angular/platform-browser';
 
 // Load the implementations that should be tested
 import {MyComponent} from './component';
